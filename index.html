@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commune Waitlist</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="header">
+            <div>
+                <img src="./Assets/Logo.svg" alt="">
+            </div>
+            <div class="hamburger-menu">
+                <img src="./Assets/Hamburger Menu.svg" alt="">
+            </div>
+            <div class="links">
+                <a href="">Features</a>
+                <a href="">Afiliates</a>
+                <a href="">Pricing</a>
+                <a href="">Communities</a>
+                <button>Join Waitlist</button>
+            </div>
+        </div>
+        <div class="mobile-links">
+            <a href="">Features</a>
+                <a href="">Afiliates</a>
+                <a href="">Pricing</a>
+                <a href="">Communities</a>
+                <button>Join Waitlist</button>
+        </div>
+        <section class="middle-section">
+            <div class="middle-text"> 
+                <button>We are now allowing early access for users. <a href="">Learn more</a></button>
+                <h1>
+                    Build a highly engaged community with no effort.
+                </h1>
+                <p>
+                    Commune offers the tools you need to build a highly engaged communiity with little to no effort.
+                    Simply set up your commune workspace, and manage everything from members to content from one central
+                    dashboard.
+                </p>
+                <div class="call-to-action">
+                    <input type="email" name="email" id="user_email" placeholder="Enter your e-mail address"><button>Join Waitlist</button>
+                </div>
+            </div>
+        <div class="illustration">
+            <img src="./Assets/Illustration.png" alt="">
+        </div>
+        </section>
+    </main>
+    <footer>
+        <p>Used by these companies:</p>
+        <div>
+            <img src="./Assets/Atlassian Icon.svg" alt="">
+            <img src="./Assets/Behance Icon.svg" alt="">
+            <img src="./Assets/Bing Icon.svg" alt="">
+            <img src="./Assets/Bitbucket Icon.svg" alt="">
+            <img src="./Assets/Dropbox Icon.svg" alt="">
+            <img src="./Assets/Twitch Icon.svg" alt="">
+            <img src="./Assets/Twitter Icon.svg" alt=""> 
+        </div>
+    </footer>
+    <script>
+        document.querySelector('.hamburger-menu').addEventListener('click', function() {
+            document.querySelector('.mobile-links').classList.toggle('active')
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Michroma', sans-serif;
+    background-color: white ;
+}
+
+main{
+    width: 80%;
+    margin: 0 auto;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+}
+.links a{
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+    margin-left: 1rem;
+}
+.header button{
+    font-weight: 400;
+    padding: 1rem;
+    border: none;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 5px;
+    margin-left: 1rem;
+}
+.middle-section{
+    display: flex;
+    align-items: center;
+    margin: 4.5rem 0;
+}
+
+.middle-text button {
+    font-weight: 400;
+    border: none;
+    background-color: blueviolet;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+}
+
+.middle-text button a{
+    font-weight: 400;
+    color: white;
+}
+.middle-section h1{
+    font-weight: 600;
+    margin: 1rem 0;
+    font-size: 3rem;
+    width: 85%;
+}
+
+.middle-section p{
+    font-weight: 400;
+    width: 70%;
+    margin-bottom: 1rem ;
+    color: black;
+    line-height: 1.4;
+}
+
+.call-to-action button{
+    font-weight: 400;
+    padding: 0.65rem;
+    border: none;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 5px;
+}
+.call-to-action input{
+    font-weight: 400;
+    padding: 0.65rem;
+    margin-right: 0.5rem;
+    width: 35%;
+}
+.hamburger-menu {
+    display: none;
+}
+
+.mobile-links {
+    display: none;
+}
+
+.illustration {
+    width: 40rem;
+}
+
+.illustration img {
+    width: 100%;
+}
+footer {
+    width: 80%;
+    margin: 0 auto;
+}
+
+footer p {
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+footer img {
+    margin-right: 0.5rem;
+    
+}
+@media(max-width: 760px) {
+    .illustration {
+        display: none;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .mobile-links {
+        display: block;
+        text-align: center;
+        position: absolute;
+        left: 0;
+        right: 0;
+        background-color: lightblue;
+        opacity: 0;
+        padding: 1.5rem 0;
+
+        transform: translateY(-500px);
+        transition: opacity 500ms ease-in-out, transform 500ms ease-in-out;
+    }
+
+    .mobile-links.active {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .mobile-links a {
+        font-weight: 400;
+        display: block;
+        text-decoration: none;
+        color: hsl(0, 0%, 100%);
+        margin-bottom: 1rem;
+    }
+
+    .mobile-links button {
+        font-weight: 400;
+        padding: 0.65rem;
+        border: none;
+        background-color: hsl(300, 100%, 12%);
+        color: white;
+        border-radius: 5px;
+    }
+
+    .middle-section{
+        text-align: center;
+    }
+
+    .middle-text h1 {
+        width: 70%;
+        margin: 2rem auto;
+    }
+    
+    .middle-text p {
+        width: 100%;
+    }
+
+    .call-to-action input {
+        width: 75%;
+    }
+}
+
+@media(max-width: 460px) {
+    body {
+        position: relative;
+    }
+
+    main {
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .mobile-links {
+        display: block;
+        text-align: center;
+        position: absolute;
+        left: 0;
+        right: 0;
+        background-color: lightblue;
+        opacity: 0;
+        padding: 1.5rem 0;
+
+        transform: translateY(-500px);
+        transition: opacity 500ms ease-in-out, transform 500ms ease-in-out;
+    }
+
+    .mobile-links.active {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .mobile-links a {
+        display: block;
+        text-decoration: none;
+        color: hsl(0, 0%, 100%);
+        margin-bottom: 1rem;
+    }
+
+    .mobile-links button {
+        padding: 0.65rem;
+        border: none;
+        background-color: hsl(300, 100%, 12%);
+        color: white;
+        border-radius: 5px;
+    }
+
+    .illustration {
+        display: none;
+    }
+
+    .middle-section {
+        text-align: center;
+    }
+
+    /* .mid-section-text button {
+        padding: 1.2rem 1rem;
+    } */
+
+    .middle-text h1,
+    .middle-text p,
+    .call-to-action input,
+    .call-to-action button {
+        width: 100%;
+    }
+
+    .call-to-action input,
+    .call-to-action button {
+        padding: 1.2rem 0.85rem;
+    }
+
+    .call-to-action input {
+        margin-bottom: 1.2rem;
+    }
+
+    footer {
+        width: 100%;
+        padding: 0 1rem;
+    }
+}
